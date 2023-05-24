@@ -47,147 +47,147 @@
         </div>
 
         <main>
-              <div class="banner" id="banner">
-                      <div class="banner_pic"><img src="./assets/img/anderson_foto.png" alt="anderson" /></div>
-                      <div class="banner_tex">
-                        <p>
-                          if (persona.includes("hambre")) { <br />
-                          console.log("Llamar a Anderson's Pizza");<br />
-                          } else {<br />
-                          console.log("No hay hambre");<br />
-                          }
-                       </p>
-                     </div>
-               </div>
-          <div class="top-wave">
-              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                  <path
-                      d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                      class="shape-fill"
-                  ></path>
-              </svg>
-          </div>
-      
-          <div class="row about light-color" id="about" data-aos="fade-up" data-aos-duration="500">
-              <div><h1>Sobre Nosotros</h1></div>
-              <div class="about_text col-md-6">
-                  <p>
-                    En Anderson's pizza somos fieles a la idea de que consumir pizza nos ayuda a concentrarnos mientras aprendemos programación.<br>
-                    Promovemos la explicación de código a través del uso de sitios web de pizzas ( y aprovechamos para aclarar que  no le envidiamos nada a la página de Kentucky).<br>
-                    Consideramos que la pizza es una recompensa al esfuerzo.<br>
-                    Por eso, si contestas correctamente nuestro quiz de preguntas frikis sobre computadoras te hacemos un 15% de descuento en tu próxima pizza!!!<br>
-                    Inténtalo, no te vas a arrepentir. 
-                  </p>
-                  <button class="light-btn" id="miBoton" onmouseover="cambiarTexto('Hacer el quiz')" onmouseout="cambiarTexto('DALE GAS!!!')" onclick="iniciarCuestionario()">DALE GAS!!!</button>
-                  <div class="cuestionario" id="cuestionario" style="display: none;">
-                    <h2>Responde con false o true</h2>
-                     <div id="preguntas"></div>
-                     <div class="calificar"><button class="light-btn" onclick="calificarRespuestas()">Enviar respuestas</button></div>
-                  </div>
-                  <div id="resultado" style="display: none;">
-                    <img id="imagenResultado" src="" alt="Resultado" />
-                    <p id="mensajeResultado"></p>
-                    <p><span id="codigoDescuento"></span></p>
-                  </div>
-              </div>
-              <div class="about_image col-md-6 about-me">
-                  <img src="./assets/img/about.png" alt="about" />
-                  <figcaption>
-                      *** Anderson's pizza es consciente de que para que la imagen superior sea representativa
-                          podria hacer falta agregar un michi y/o un cafe.
-                  </figcaption>
-              </div>
-              <div class="top-wave svg-invertido">
+            <div class="banner" id="banner">
+                <div class="banner_pic"><img src="./assets/img/anderson_foto.png" alt="anderson" /></div>
+                <div class="banner_tex">
+                    <p>
+                        if (persona.includes("hambre")) { <br />
+                        console.log("Llamar a Anderson's Pizza");<br />
+                        } else {<br />
+                        console.log("No hay hambre");<br />
+                        }
+                    </p>
+                </div>
+            </div>
+            <div class="top-wave">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path
                         d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
                         class="shape-fill"
                     ></path>
                 </svg>
-             </div>
+            </div>
+
+            <div class="row about light-color" id="about" data-aos="fade-up" data-aos-duration="500">
+                <div><h1>Sobre Nosotros</h1></div>
+                <div class="about_text col-md-6">
+                    <p>
+                        En Anderson's pizza somos fieles a la idea de que consumir pizza nos ayuda a concentrarnos mientras aprendemos programación.<br />
+                        Promovemos la explicación de código a través del uso de sitios web de pizzas ( y aprovechamos para aclarar que no le envidiamos nada a la página de Kentucky).<br />
+                        Consideramos que la pizza es una recompensa al esfuerzo.<br />
+                        Por eso, si contestas correctamente nuestro quiz de preguntas frikis sobre computadoras te hacemos un 15% de descuento en tu próxima pizza!!!<br />
+                        Inténtalo, no te vas a arrepentir.
+                    </p>
+                    <button class="light-btn" id="miBoton" onmouseover="cambiarTexto('Hacer el quiz')" onmouseout="cambiarTexto('DALE GAS!!!')" onclick="iniciarCuestionario()">DALE GAS!!!</button>
+                    <div class="cuestionario" id="cuestionario" style="display: none;">
+                        <h2>Responde con false o true</h2>
+                        <div id="preguntas"></div>
+                        <div class="calificar"><button class="light-btn" onclick="calificarRespuestas()">Enviar respuestas</button></div>
+                    </div>
+                    <div id="resultado" style="display: none;">
+                        <img id="imagenResultado" src="" alt="Resultado" />
+                        <p id="mensajeResultado"></p>
+                        <p><span id="codigoDescuento"></span></p>
+                    </div>
+                </div>
+                <div class="about_image col-md-6 about-me">
+                    <img src="./assets/img/about.png" alt="about" />
+                    <figcaption>
+                        *** Anderson's pizza es consciente de que para que la imagen superior sea representativa podria hacer falta agregar un michi y/o un cafe.
+                    </figcaption>
+                </div>
+                <div class="top-wave svg-invertido">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path
+                            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                            class="shape-fill"
+                        ></path>
+                    </svg>
+                </div>
             </div>
             <div class="carta" id="carta">
-                  <div>
-                      <h1>Carta</h1>
-                      <h1 class="titulocarta">¡Conocé Nuestras Variedades!</h1>
-                  </div>
-                  <div class="tarjetas-container" id="tarjetas-container" data-aos="zoom-in-right" data-aos-duration="500"></div>
-              </div>
-              <div class="top-wave">
-                  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                      <path
-                          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                          class="shape-fill"
-                      ></path>
-                  </svg>
-              </div>
-      
-              <div class="contact" id="contact" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
-                  <h1>Contactanos!</h1>
-                  <div class="tarjeta_contacto">
-                      <p>Dias y Horarios De Atención</p>
-                      <p>Miercoles y viernes de 17 hs a 18:30 hs</p>
-                  </div>
-                  <div class="contact-box" data-aos="zoom-in-right" data-aos-duration="500">
-                      <div class="mapa">
-                          <div style="width: 100%;">
-                              <iframe
-                                  scrolling="no"
-                                  marginheight="0"
-                                  marginwidth="0"
-                                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Carlos%20H.%20Perette%20750+(Anderson%C2%B4s%20Pizza)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                                  width="100%"
-                                  height="600"
-                                  frameborder="0"
-                              >
-                                  <a href="https://www.gps.ie/car-satnav-gps/">Car GPS</a>
-                              </iframe>
-                          </div>
-                      </div>
-                      <div class="right-side">
-                          <form id="form">
-                              <div class="info-required">
-                                  <label for="name">Name *</label>
-                                  <input type="text" name="name" id="name" placeholder="Enter your name" autocomplete="off" required pattern="[a-zA-Z\ ]+" />
-                              </div>
-                              <div class="info-required">
-                                  <label for="email">Email *</label>
-                                  <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="on" required>
-                              </div>
-                              <div class="info-required">
-                                  <label for="phone">Phone Number</label>
-                                  <input type="text" name="phone" id="phone" placeholder="Enter your phone number" autocomplete="on" pattern="[0-9]+" minlength="8" maxlength="10" />
-                              </div>
-                              <div class="info-required">
-                                  <label for="message">Message *</label>
-                                  <textarea type="text" name="message" id="message" placeholder="Enter message" rows="5" cols="33"></textarea>
-                              </div>
-                              <button class="light-btn" type="submit" onclick="return sendEmail();">Enviar</button>
-                          </form>
-                      </div>
-                  </div>
-          </main>
-          <div class="top-wave svg-invertido">
+                <div>
+                    <h1>Carta</h1>
+                    <h1 class="titulocarta">¡Conocé Nuestras Variedades!</h1>
+                </div>
+                <div class="tarjetas-container" id="tarjetas-container" data-aos="zoom-in-right" data-aos-duration="500"></div>
+            </div>
+            <div class="top-wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"
+                    ></path>
+                </svg>
+            </div>
+
+            <div class="contact" id="contact" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+                <h1>Contactanos!</h1>
+                <div class="tarjeta_contacto">
+                    <p>Dias y Horarios De Atención</p>
+                    <p>Miercoles y viernes de 17 hs a 18:30 hs</p>
+                </div>
+                <div class="contact-box" data-aos="zoom-in-right" data-aos-duration="500">
+                    <div class="mapa">
+                        <div style="width: 100%;">
+                            <iframe
+                                scrolling="no"
+                                marginheight="0"
+                                marginwidth="0"
+                                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Carlos%20H.%20Perette%20750+(Anderson%C2%B4s%20Pizza)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                width="100%"
+                                height="600"
+                                frameborder="0"
+                            >
+                                <a href="https://www.gps.ie/car-satnav-gps/">Car GPS</a>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <form id="form">
+                            <div class="info-required">
+                                <label for="name">Name *</label>
+                                <input type="text" name="name" id="name" placeholder="Enter your name" autocomplete="off" required pattern="[a-zA-Z\ ]+" />
+                            </div>
+                            <div class="info-required">
+                                <label for="email">Email *</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="on" required />
+                            </div>
+                            <div class="info-required">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" name="phone" id="phone" placeholder="Enter your phone number" autocomplete="on" pattern="[0-9]+" minlength="8" maxlength="10" />
+                            </div>
+                            <div class="info-required">
+                                <label for="message">Message *</label>
+                                <textarea type="text" name="message" id="message" placeholder="Enter message" rows="5" cols="33"></textarea>
+                            </div>
+                            <button class="light-btn" type="submit" onclick="return sendEmail();">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="top-wave svg-invertido">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path
                     d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
                     class="shape-fill"
                 ></path>
             </svg>
-         </div>
-      <footer>
-            <h2><b>Anderson's pizza 2023 &copy; Desarrollado por el GRUPO 8 del curso Fullstack Phyton para el programa </b><img src="./assets/img/cac_logo.png" alt="cac_logo" /></h2> 
-      </footer>
-      <script src="./assets/js/showElements.js"></script>
-      <script type="text/javascript" src="./assets/js/sendEmail.js"></script>
-      <script type="text/javascript" src="./assets/js/cuestionario.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
-      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.10/dist/sweetalert2.all.min.js"></script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script type="text/javascript">
-       AOS.init();
-      </script>
-      <script src="./assets/js/events.js"></script>
+        </div>
+        <footer>
+            <h2><b>Anderson's pizza 2023 &copy; Desarrollado por el GRUPO 8 del curso Fullstack Phyton para el programa </b><img src="./assets/img/cac_logo.png" alt="cac_logo" /></h2>
+        </footer>
+        <script src="./assets/js/showElements.js"></script>
+        <script type="text/javascript" src="./assets/js/sendEmail.js"></script>
+        <script type="text/javascript" src="./assets/js/cuestionario.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.10/dist/sweetalert2.all.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript">
+            AOS.init();
+        </script>
+        <script src="./assets/js/events.js"></script>
     </body>
 </html>

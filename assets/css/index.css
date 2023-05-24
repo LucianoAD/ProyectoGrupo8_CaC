@@ -1,3 +1,6 @@
+
+/*ARCHIVO DE ESTILOS PRINCIPAL*/
+
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
@@ -5,16 +8,10 @@
 
 /*==================================================== FORMATO GENERAL=======================================================*/
 
-
-
-
 body {
     background-color: rgb(198, 22, 22);
     font-family: "Raleway", sans-serif;
 }
-
-
-
 
 main {
     font-family: "Montserrat", sans-serif;
@@ -32,20 +29,18 @@ main {
     color: #f39422;
 }
 
-
 /*====================================================MENU=======================================================*/
 .padre {
-  width: 100%;
-  display: flex;
-  height: auto;
-  flex-flow: column nowrap;
-  justify-content: center;
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
-  
+
 a {
     text-decoration: none;
 }
-
 
 .menu {
     background: rgba(0, 0, 0, 0.1);
@@ -57,8 +52,8 @@ a {
 }
 
 .margen-interno {
-  padding: 0px 65px ;
-  justify-content: center;
+    padding: 0px 65px;
+    justify-content: center;
 }
 
 .logo {
@@ -87,8 +82,8 @@ a {
 .nav a:hover {
     color: #343434;
 }
-.social_text{
-  display:none;
+.social_text {
+    display: none;
 }
 .social {
     display: flex;
@@ -105,42 +100,39 @@ a {
 }
 
 .social p {
-  font-size: 20px;
-  color: white;
-  padding: 0 5px;
-  margin: 0 0 0 30px;
+    font-size: 20px;
+    color: white;
+    padding: 0 5px;
+    margin: 0 0 0 30px;
 }
 
 .fa-brands {
-  font-size: 25px;
+    font-size: 25px;
 }
 
-.fa-instagram{
-  margin-top: 2px;
+.fa-instagram {
+    margin-top: 2px;
 }
 
 @media (max-width: 580px) {
-  
-  header .menu {
-  display: block;
-  justify-content: center;
+    header .menu {
+        display: block;
+        justify-content: center;
+    }
 
-  }
+    .logo .nav .social {
+        display: block;
+        align-items: center;
+    }
 
-  .logo .nav .social {
-    display: block;
-    align-items: center;
-  }
+    .social p {
+        display: none;
+    }
 
-  .social p {
-    display: none;
-  }
-
-  .social{
-    padding: 10px 0px 10px 0px;
-    margin-left: 15%;
-  }
-
+    .social {
+        padding: 10px 0px 10px 0px;
+        margin-left: 15%;
+    }
 }
 
 /*@media screen and (min-width: 345px) and (max-width: 580px) {
@@ -257,14 +249,13 @@ a {
 }
 
 @media (max-width: 766px) {
-  .about_text {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 25px;
-    justify-content: center;
-}
- 
+    .about_text {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 25px;
+        justify-content: center;
+    }
 }
 
 .cuestionario {
@@ -280,27 +271,25 @@ a {
     padding-top: 20px;
 }
 
-#preguntas p{
+#preguntas p {
     font-size: 18px;
     padding-top: 10px;
 }
 
-#resultado{
+#resultado {
     width: 50%;
     margin-top: 20px;
     border-radius: 20px;
     height: auto;
     align-items: center;
     margin-left: 25%;
-
 }
 
-#imagenResultado{
+#imagenResultado {
     margin-top: 20px;
     width: clamp(200px, 40vw, 200px);
     border-radius: 20px;
 }
-
 
 /*====================================================CARTA=======================================================*/
 .carta {
@@ -591,4 +580,3 @@ footer img {
         padding-bottom: 70px;
     }
 }
-
