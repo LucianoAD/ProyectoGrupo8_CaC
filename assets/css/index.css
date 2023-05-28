@@ -62,7 +62,7 @@ header{
 .logo {
     color: yellow;
     text-shadow: 5px 5px black;
-
+    text-align: center;
     flex: 1 1 auto;
 }
 .logo a {
@@ -97,6 +97,8 @@ header{
     color: white;
     padding: 0 5px;
     margin: 0 0 0 30px;
+    display: flex;
+    align-items: center;
 }
 .social a:hover {
     color: #343434;
@@ -117,35 +119,68 @@ header{
     margin-top: 2px;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 579px) {
     header .menu {
         display: block;
         justify-content: center;
     }
-
-    .logo .nav .social {
-        display: block;
+    .nav{
+        display: flex;
         align-items: center;
+        width: 100%;
+        justify-content: center;
     }
 
+    .nav a {
+        font-size: 12px;
+    }
+    .margen-interno {
+        padding: 0px 25px;
+        justify-content: center;
+    }
+    
     .social p {
         display: none;
     }
 
     .social {
-        padding: 10px 0px 10px 0px;
-        margin-left: 15%;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .social a{
+        padding: 0px;
+        margin: 0px 20px;
     }
 }
 
-@media screen and (min-width: 345px) and (max-width: 580px) {
+@media screen and (min-width: 580px) and (max-width: 750px) {
+    .nav a {
+        font-size: 12px;
+        margin-left: 12px;
+    }
+    .margen-interno{
+        padding: 0px 20px;
+    }
 
-  .menu .logo .nav .social{
-    display: block;
-    padding-left: 0%;
-  }
-  }
+    .logo{
+        text-align: center;
+    }
 
+    .social p{
+        font-size: 15px;
+    }
+
+    .social a {
+        display: flex;
+        align-items: center;
+    }
+   
+}
 /*====================================================INICIO=======================================================*/
 
 .banner {
@@ -203,6 +238,7 @@ header{
 }
 
 @media (max-width: 580px) {
+
     .banner {
         flex-direction: column;
         justify-content: center;
@@ -428,6 +464,13 @@ header{
     opacity: 1;
 }
 
+@media (max-width: 429px) {
+    .tarjetas-container{
+        margin-left: 12%;
+    }
+}
+
+
 /*====================================================CONTACT=======================================================*/
 
 .contact {
@@ -619,9 +662,7 @@ footer img {
 }
 
 @media screen and (max-width: 480px) {
-    .banner {
-        padding-bottom: 70px;
-    }
+    
 
     .carta {
         padding-bottom: 70px;
@@ -632,6 +673,19 @@ footer img {
     }
 
     .tarjeta_contacto p {
-        font-size: 15px;
+        font-size: 12px;
+    }
+
+    .info-required {
+
+        margin-bottom: 10px;
+
+    }
+    .right-side{
+        padding-top: 0%;
+    }
+
+    .contact{
+        padding-bottom: 0%;
     }
 }
