@@ -468,6 +468,10 @@ header{
     .tarjetas-container{
         margin-left: 12%;
     }
+
+    .carta {
+        padding-bottom: 70px;
+    }
 }
 
 
@@ -599,6 +603,49 @@ header{
     padding: 5px 50px;
 }
 
+@media screen and (max-width: 1040px) {
+    .contact-box {
+        grid-template-columns: 1fr;
+        width: clamp(200px, 80vw, 500px);
+    }
+
+    .left-side {
+        height: 150px;
+        margin-bottom: 30px;
+    }
+
+    .left-side img {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+
+
+    .mapa {
+        height: 300px;
+    }
+
+    .tarjeta_contacto p {
+        font-size: 12px;
+    }
+
+    .info-required {
+
+        margin-bottom: 10px;
+
+    }
+    .right-side{
+        padding-top: 0%;
+    }
+
+    .contact{
+        padding-bottom: 0%;
+    }
+}
+
+
 /*====================== FOOTER ======================*/
 
 footer {
@@ -643,49 +690,4 @@ footer img {
 
 }
 
-/*============================================================================= OTRAS MEDIA QUERIES ========================================================================*/
 
-@media screen and (max-width: 1040px) {
-    .contact-box {
-        grid-template-columns: 1fr;
-        width: clamp(200px, 80vw, 500px);
-    }
-
-    .left-side {
-        height: 150px;
-        margin-bottom: 30px;
-    }
-
-    .left-side img {
-        margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    
-
-    .carta {
-        padding-bottom: 70px;
-    }
-
-    .mapa {
-        height: 300px;
-    }
-
-    .tarjeta_contacto p {
-        font-size: 12px;
-    }
-
-    .info-required {
-
-        margin-bottom: 10px;
-
-    }
-    .right-side{
-        padding-top: 0%;
-    }
-
-    .contact{
-        padding-bottom: 0%;
-    }
-}
