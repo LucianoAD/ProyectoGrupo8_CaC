@@ -1,4 +1,4 @@
-//VALIDACION DE FORMULARIO
+//VALIDACION DEl MAIL EN FORMULARIO
 
 function sendEmail() {
     // Get our input reference.

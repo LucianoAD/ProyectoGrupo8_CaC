@@ -34,12 +34,15 @@ main {
     width: 100%;
     display: flex;
     height: auto;
-    flex-flow: column nowrap;
     justify-content: center;
 }
 
 a {
     text-decoration: none;
+}
+
+header{
+    width: 100%;
 }
 
 .menu {
@@ -135,7 +138,7 @@ a {
     }
 }
 
-/*@media screen and (min-width: 345px) and (max-width: 580px) {
+@media screen and (min-width: 345px) and (max-width: 580px) {
 
   .menu .logo .nav .social{
     display: block;
@@ -206,6 +209,9 @@ a {
     }
     .banner p {
         font-size: medium;
+    }
+    .banner img {
+        width: clamp(300px, 30vw, 30px);
     }
 }
 /*====================================================ABOUT=======================================================*/
@@ -283,14 +289,43 @@ a {
     height: auto;
     align-items: center;
     margin-left: 25%;
+    justify-content: center;
 }
 
 #imagenResultado {
     margin-top: 20px;
     width: clamp(200px, 40vw, 200px);
     border-radius: 20px;
+    align-items: center;
 }
 
+@media (max-width: 412px) {
+    .about p{
+        font-size: medium
+   ;}
+   .about h1{
+    font-size: 30px;
+   }
+
+   #imagenResultado {
+    margin-top: 20px;
+    width: clamp(150px, 50vw, 150px);
+    border-radius: 20px;
+    align-items: center;
+}
+
+#resultado {
+    padding: 5px;
+
+}
+#resultado p {
+    margin-left: 0;
+    justify-content: center;
+}
+
+   
+ 
+}
 /*====================================================CARTA=======================================================*/
 .carta {
     align-items: center;
@@ -553,7 +588,19 @@ footer img {
     border-radius: 10px;
 }
 
-/*============================================================================= MEDIA QUERIES ========================================================================*/
+@media (max-width: 412px) {
+    footer h2 {
+        font-size: small;
+    }
+
+    footer img {
+        width: clamp(70px, 20vw, 70px);
+        border-radius: 10px;
+    }
+
+}
+
+/*============================================================================= OTRAS MEDIA QUERIES ========================================================================*/
 
 @media screen and (max-width: 1040px) {
     .contact-box {
@@ -578,5 +625,13 @@ footer img {
 
     .carta {
         padding-bottom: 70px;
+    }
+
+    .mapa {
+        height: 300px;
+    }
+
+    .tarjeta_contacto p {
+        font-size: 15px;
     }
 }
