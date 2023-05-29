@@ -1,10 +1,11 @@
 
-//CAMBIAR TEXTO DE BOTON AL PASAR POR ENCIMA
+//CAMBIAR TEXTO DE BOTON DE la SECCION ABOUT AL PASAR POR ENCIMA
 function cambiarTexto(nuevoTexto) {
   document.getElementById("miBoton").innerHTML = nuevoTexto;
 }
 
-//ANIMACION DE LA SECCION CARTA QUE HIZO YANI pero para que se ejecute cuando el usuario baja a la seccion (asi se ve sino se pierde a menos que baje rapido)
+//ANIMACION DE LA SECCION CARTA QUE HIZO YANI 
+//(pero para que se ejecute cuando el usuario baja a la seccion, asi se ve sino se pierde a menos que el usuario baje rapido)
 window.addEventListener("scroll", function () {
   var section = document.querySelector(".titulocarta");
   var sectionOffsetTop = section.offsetTop;
@@ -18,7 +19,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-//navegar en el menu
+//IR A LA SECCION A TRAVES DE LOS ENLACES DEL MENU
 
 // Seleccionar todos los enlaces del menú
 var menuLinks = document.querySelectorAll("nav a");

@@ -1,21 +1,22 @@
 # ProyectoGrupo8_CaC
 
-Introducción: Describe el propósito y objetivo de la página web, así como una visión general de sus características y funcionalidades.
+El siguiente código fue desarrollado como respuesta a la consigna del TPO "Proyecto web: HTML, CSS y Javascript" del curso Full Stack Python del programa Codo a Codo en el año 2023.
 
-Requisitos: Enumera los requisitos necesarios para ejecutar y utilizar la página web, como el sistema operativo, navegador web compatible, versiones de software o plugins requeridos, etc.
+Se trata de un sitio web estilo one page compuesto por 4 secciones, todas ellas adaptadas para diferentes tamaños de dispositivos. El contenido está estructurado en lenguaje HTML utilizando etiquetas semánticas adecuadas en el archivo "index.html".
 
-Arquitectura y Estructura: Describe la estructura general de la página web, incluyendo la organización de archivos, carpetas y componentes, y la jerarquía de navegación.
+En el encabezado (header) se encuentran los enlaces que se utilizan para cargar recursos externos en la página web, como iconos y fuentes tipográficas.
 
-Diseño y Diseño Responsivo: Proporciona detalles sobre el diseño visual de la página web, incluyendo colores, tipografía, disposición de elementos, uso de imágenes y multimedia, así como su capacidad de respuesta en diferentes dispositivos y tamaños de pantalla.
+A continuación, al comienzo de la sección principal (body), se encuentra el menú de navegación, el cual ha sido vinculado con un archivo JavaScript llamado "events.js" para permitir que el/la usuario/a pueda desplazarse automáticamente a diferentes secciones al hacer clic en los elementos del menú.
 
-Funcionalidades: Documenta las diferentes funcionalidades y características de la página web, como formularios, interacción con el usuario, integración con APIs o servicios externos, gestión de usuarios, etc.
+La sección principal (main) comienza con la sección "banner", que presenta la introducción del negocio e incluye un contenedor que contiene una imagen y un texto animado mediante el uso de keyframes en CSS.
 
-Instrucciones de Uso: Proporciona instrucciones detalladas sobre cómo utilizar la página web, incluyendo cómo navegar entre las diferentes secciones, cómo interactuar con las funcionalidades, cómo completar formularios, etc.
+La siguiente sección, denominada "about", proporciona una descripción del objetivo del negocio, acompañada de una imagen. Esta sección se ha dividido en columnas utilizando Bootstrap. Además, se ha incluido un botón que despliega un cuestionario mediante un evento de clic, el cual está conectado a la API del sitio web https://opentdb.com/. Las funciones relacionadas con el cuestionario están escritas en JavaScript y se encuentran en el archivo "cuestionario.js". El cuestionario consta de 3 preguntas de opción verdadero/falso sobre la temática  "computadoras". Para mostrar las preguntas traducidas al español, se utiliza la API de "api.mymemory.translated.net". Además, dado que la cantidad de traducciones por día es limitada,  se ha aprovechado el código de error proporcionado por la API de mymemory para informar al usuario/a cuándo estará disponible un nuevo conjunto de preguntas para obtener descuentos.
 
-FAQ (Preguntas frecuentes): Incluye una lista de preguntas frecuentes y sus respuestas relacionadas con la página web, proporcionando a los usuarios información adicional y soluciones a problemas comunes.
+Cuando el/la usuario/a ha respondido, un segundo botón, que aparece al desplegar el cuestionario, llama a una función que evalúa si las respuestas suministradas son correctas comparando el valor ingresado con el detallado en el archivo JSON de la API de opentdb. Si el/la usuario/a respondió incorrectamente se despliega una imagen y un mensaje,  si todas las respuestas son correctas además, se genera y muestra  un código de descuento aleatorio de cinco dígitos.
 
-Referencia de API: Si la página web utiliza una API o servicios externos, se pueden incluir detalles sobre cómo utilizar y acceder a dicha API, incluyendo ejemplos de solicitudes y respuestas.
+Adicionalmente hemos incluido un segundo código escrito en Vue.js que pretende reemplazar las preguntas del cuestionario por otras más específicas de programación, traídas de la API de la página https://quizapi.io. Estas preguntas son de tipo multiple choice. Hemos logrado traer las preguntas con sus opciones y adaptar el código HTML del cuestionario para mostrarlas, sin embargo, aún resta adaptar el diseño de la sección. 
 
-Versionado y cambios: Si la página web tiene diferentes versiones o se espera que se realicen cambios en el futuro, se puede documentar el historial de versiones y los cambios realizados en cada versión.
+En la sección "carta", se ha creado un archivo JSON que se lee a través del archivo JavaScript "showElements.js" y se utilizan para crear elementos en el DOM que muestran los productos a los/as usuarios/as.
 
-Contacto y Soporte: Proporciona información de contacto para obtener soporte técnico, informar problemas o proporcionar comentarios sobre la página web.
+Por último, se ha creado un formulario de contacto que permite a las personas usuarias enviar mensajes al negocio. Mediante el archivo "sendEmail.js", se valida que la dirección de correo electrónico ingresada sea correcta y, en caso de ser incorrecta, se muestra un mensaje de alerta. Además, el formulario envía un correo electrónico utilizando el esquema de URL "mailto". Al inicio del mismo se incorporó un iframe que incrusta un mapa en el formato de Google Map y permite localizar espacialmente el negocio.
+
