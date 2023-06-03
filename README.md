@@ -7,7 +7,7 @@
 Este README proporciona una descripción detallada de las funcionalidades y características del sitio web desarrollado como parte del proyecto "Proyecto web: HTML, CSS y Javascript" del curso Full Stack Python del programa Codo a Codo en el año 2023.
 El sitio web fue construido siguendo el estilo "one page" y esta compuesto por 4 secciones. Tiene capacidad de adaptacion para diferentes tamaños de dispositivos. Fue diseñado utilizando HTML, CSS y Javascript.
 
-##:hammer: Estructura proyecto
+## :hammer: Estructura proyecto
 El proyecto se organiza de la siguiente manera:
 
 - `index.html`: El archivo principal que contiene la estructura del sitio web en lenguaje HTML utilizando etiquetas semánticas adecuadas.
