@@ -1,4 +1,6 @@
-#TPO Grupo 8 -- Codo a Codo
+
+<h1 align="center"> TPO Grupo 8 <br>Programa Codo a codo </h1>
+
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20CORRECCION-green) ![Badge en Desarollo](https://img.shields.io/badge/LICENSE-MIT-green)
 
 ## :book:Descripción general
