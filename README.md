@@ -34,7 +34,7 @@ Las funcionalidades se proporcionan mediante los siguentes archivos JavaScript:
 - `sendEmail.js`:  valida y envía los mensajes del formulario de contacto mediante el esquema de URL "mailto".
 - `cuestionario_2.js`: utiliza el framework Vue.js para reemplazar las preguntas del cuestionario por otras mas específicas de programación traidas de las API de https://quizapi.io. A diferencia de las anteriores, estas preguntas son de tipo multriple choice. Ademas hemos modificado el codigo del HTML para pode rincorporar este tipo de preguntas. Actualmente, el diseño de esta sección aún está en proceso de adaptación.
 
-##:heavy_check_mark: Recursos adicionales
+## :heavy_check_mark: Recursos adicionales
 - Animaciones de https://michalsnik.github.io/aos/
 - iframe de https://www.maps.ie/create-google-map/
 - Tipografías de https://fonts.google.com/
