@@ -15,7 +15,7 @@ El proyecto se organiza de la siguiente manera:
 - `btns.css`: Archivo de hojas de estilo que se encarga de la apariencia de los botones.
 - `waves.css`: Archivo de hojas de estilo que da formato a las ondas utilizadas como estilo de fondo en el diseño del sitio.
 
-##:rocket:Funcionalidades
+## :rocket:Funcionalidades
 Las funcionalidades se proporcionan mediante los siguentes archivos JavaScript:
 - `events.js`: gestiona las interacciones del usuario, que incluye las siguentes funciones: 
     - cambiarTexto(nuevoTexto): modifica el texto dentro de un boton cuando el usuario pasa el mouse sobre el mimso.
