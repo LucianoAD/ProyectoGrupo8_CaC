@@ -1,22 +1,44 @@
-# ProyectoGrupo8_CaC
+#TPO Grupo 8 -- Codo a Codo
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20CORRECCION-green) ![Badge en Desarollo](https://img.shields.io/badge/LICENSE-MIT-green)
 
-El siguiente código fue desarrollado como respuesta a la consigna del TPO "Proyecto web: HTML, CSS y Javascript" del curso Full Stack Python del programa Codo a Codo en el año 2023.
+## :book:Descripción general
+Este README proporciona una descripción detallada de las funcionalidades y características del sitio web desarrollado como parte del proyecto "Proyecto web: HTML, CSS y Javascript" del curso Full Stack Python del programa Codo a Codo en el año 2023.
+El sitio web fue construido siguendo el estilo "one page" y esta compuesto por 4 secciones. Tiene capacidad de adaptacion para diferentes tamaños de dispositivos. Fue diseñado utilizando HTML, CSS y Javascript.
 
-Se trata de un sitio web estilo one page compuesto por 4 secciones, todas ellas adaptadas para diferentes tamaños de dispositivos. El contenido está estructurado en lenguaje HTML utilizando etiquetas semánticas adecuadas en el archivo "index.html".
+##:hammer: Estructura proyecto
+El proyecto se organiza de la siguiente manera:
 
-En el encabezado (header) se encuentran los enlaces que se utilizan para cargar recursos externos en la página web, como iconos y fuentes tipográficas.
+- `index.html`: El archivo principal que contiene la estructura del sitio web en lenguaje HTML utilizando etiquetas semánticas adecuadas.
+- `index.css`: El archivo de hojas de estilo CSS que se encarga de la apariencia y el diseño de cada seccion del sitio web.
+- `btns.css`: Archivo de hojas de estilo que se encarga de la apariencia de los botones.
+- `waves.css`: Archivo de hojas de estilo que da formato a las ondas utilizadas como estilo de fondo en el diseño del sitio.
 
-A continuación, al comienzo de la sección principal (body), se encuentra el menú de navegación, el cual ha sido vinculado con un archivo JavaScript llamado "events.js" para permitir que el/la usuario/a pueda desplazarse automáticamente a diferentes secciones al hacer clic en los elementos del menú.
+##:rocket:Funcionalidades
+Las funcionalidades se proporcionan mediante los siguentes archivos JavaScript:
+- `events.js`: gestiona las interacciones del usuario, que incluye las siguentes funciones: 
+    - cambiarTexto(nuevoTexto): modifica el texto dentro de un boton cuando el usuario pasa el mouse sobre el mimso.
+    - window.addEventListener("scroll", function (): agrega un event listener al objeto window para detectar el evento de desplazamiento (scroll). Cada vez que el usuario desplaza la página, se ejecuta la función especificada como el segundo parámetro del addEventListener. Dentro de la función, se realizan varias operaciones para verificar si se ha alcanzado una determinada posición de desplazamiento en la página y, en consecuencia, se añade una clase CSS a un elemento.
+    - link.addEventListener("click", function (event): permite realizar un desplazamiento suave hacia diferentes secciones del sitio web al hacer clic en los enlaces del menú de navegación. Al hacer clic en un enlace, se obtiene el destino al que se debe desplazar, se selecciona el elemento de destino y se realiza el desplazamiento suave utilizando scrollIntoView.
+- `cuestionario.js`: El archivo JavaScript que contiene la lógica para desplegar y evaluar un cuestionario de tres preguntas de tipo booleanas extraidas de la API de `https://opentdb.com/`, ademas utiliza la API de traducción `api.mymemory.translated.net` para mostrar las preguntas traducidas al español. El proceso se realiza llamando a las siguentes funciones:
+    - function iniciarCuestionario() : despliega el cuestionario en el sitio web al obtener las preguntas del API, traducirlas y mostrar el cuestionario mientras oculta el resultado previo del mismo.
+    - function traducirTexto(texto): la función traduce el texto proporcionado del inglés al español utilizando la API de MyMemory Translation, maneja posibles errores y devuelve el texto traducido o un mensaje de advertencia en caso de límite de uso de la API.
+    - function mostrarMensajeLimite(warningMessage): analiza un mensaje de advertencia y muestra el tiempo restante hasta la próxima pregunta disponible si el formato es válido, o devuelve un mensaje de error si el formato es incorrecto.
+    - function traducirPreguntas(preguntas): la función traduce un array de preguntas utilizando la función traducirTexto, agrega una propiedad "traducida" a cada pregunta y luego muestra las preguntas traducidas utilizando la función mostrarPreguntas. Si hay errores en el proceso, se manejan adecuadamente y se muestra un mensaje de error en la consola.
+    - function mostrarPreguntas(preguntas): esta función genera y muestra en el documento HTML el conjunto de preguntas, cada una con su enunciado traducido, campo de respuesta y atributo que almacena la respuesta correcta.
+    - function calificarRespuestas(): la función verifica y cuenta las respuestas correctas ingresadas por el usuario en un cuestionario, y luego muestra un resultado dependiendo de si todas las respuestas son correctas o no.
+    - function mostrarResultado(correcto): configura y muestra el resultado del cuestionario al usuario, modificando elementos del documento HTML y mostrando una imagen, mensaje y código de descuento dependiendo de si todas las respuestas son correctas o no.
+    - function generarCodigoDescuento(): genera un código de descuento aleatorio de 5 dígitos y lo devuelve.
+- `showElements.js`: se encarga de leer un archivo JSON de la carta de pizzas y crear elementos en el DOM para mostrar los productos en la sección "carta".
+- `sendEmail.js`:  valida y envía los mensajes del formulario de contacto mediante el esquema de URL "mailto".
+- `cuestionario_2.js`: utiliza el framework Vue.js para reemplazar las preguntas del cuestionario por otras mas específicas de programación traidas de las API de https://quizapi.io. A diferencia de las anteriores, estas preguntas son de tipo multriple choice. Ademas hemos modificado el codigo del HTML para pode rincorporar este tipo de preguntas. Actualmente, el diseño de esta sección aún está en proceso de adaptación.
 
-La sección principal (main) comienza con la sección "banner", que presenta la introducción del negocio e incluye un contenedor que contiene una imagen y un texto animado mediante el uso de keyframes en CSS.
+##:heavy_check_mark: Recursos adicionales
+- Animaciones de https://michalsnik.github.io/aos/
+- iframe de https://www.maps.ie/create-google-map/
+- Tipografías de https://fonts.google.com/
 
-La siguiente sección, denominada "about", proporciona una descripción del objetivo del negocio, acompañada de una imagen. Esta sección se ha dividido en columnas utilizando Bootstrap. Además, se ha incluido un botón que despliega un cuestionario mediante un evento de clic, el cual está conectado a la API del sitio web https://opentdb.com/. Las funciones relacionadas con el cuestionario están escritas en JavaScript y se encuentran en el archivo "cuestionario.js". El cuestionario consta de 3 preguntas de opción verdadero/falso sobre la temática  "computadoras". Para mostrar las preguntas traducidas al español, se utiliza la API de "api.mymemory.translated.net". Además, dado que la cantidad de traducciones por día es limitada,  se ha aprovechado el código de error proporcionado por la API de mymemory para informar al usuario/a cuándo estará disponible un nuevo conjunto de preguntas para obtener descuentos.
-
-Cuando el/la usuario/a ha respondido, un segundo botón, que aparece al desplegar el cuestionario, llama a una función que evalúa si las respuestas suministradas son correctas comparando el valor ingresado con el detallado en el archivo JSON de la API de opentdb. Si el/la usuario/a respondió incorrectamente se despliega una imagen y un mensaje,  si todas las respuestas son correctas además, se genera y muestra  un código de descuento aleatorio de cinco dígitos.
-
-Adicionalmente hemos incluido un segundo código escrito en Vue.js que pretende reemplazar las preguntas del cuestionario por otras más específicas de programación, traídas de la API de la página https://quizapi.io. Estas preguntas son de tipo multiple choice. Hemos logrado traer las preguntas con sus opciones y adaptar el código HTML del cuestionario para mostrarlas, sin embargo, aún resta adaptar el diseño de la sección. 
-
-En la sección "carta", se ha creado un archivo JSON que se lee a través del archivo JavaScript "showElements.js" y se utilizan para crear elementos en el DOM que muestran los productos a los/as usuarios/as.
-
-Por último, se ha creado un formulario de contacto que permite a las personas usuarias enviar mensajes al negocio. Mediante el archivo "sendEmail.js", se valida que la dirección de correo electrónico ingresada sea correcta y, en caso de ser incorrecta, se muestra un mensaje de alerta. Además, el formulario envía un correo electrónico utilizando el esquema de URL "mailto". Al inicio del mismo se incorporó un iframe que incrusta un mapa en el formato de Google Map y permite localizar espacialmente el negocio.
-
+## :woman::man::man::man:Integrantes del grupo:
+- Yanina Tiribelli
+- Miguel Angel Estrada Rivera 
+- Franco Bernedo
+- Luciano Anselmino
