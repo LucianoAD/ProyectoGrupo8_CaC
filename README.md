@@ -38,7 +38,7 @@ The project demonstrates frontend development concepts including:
 
 ## 🌐 Live Demo
 
-[View Project](https://lucianoad.github.io/ProyectoGrupo8_CaC/)
+[View Project](https://lucianoad.github.io/Interactive-Web-App-with-API-Integration/)
 
 ## 👥 Team
 - Luciano Anselmino
